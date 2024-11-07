@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data JavaScript dengan Console.log dan Alert</title>
+</head>
+<body>
+    <h1>Periksa Console dan Alert untuk Hasil Tipe Data</h1>
+
+    <script>
+        // Tipe data String
+        let string = "CELERATES"; // Contoh String
+        if (string === "CELERATES") {
+            alert(string); // Menampilkan alert jika string sesuai
+            console.log(string); // Mencetak di console jika string sesuai
+        } else {
+            alert("String tidak sesuai"); // Menampilkan alert jika string tidak sesuai
+            console.log("String tidak sesuai"); // Mencetak di console jika string tidak sesuai
+        }
+
+        // Tipe data Boolean
+        let isAvailable = true; // Karena disni tertulis true maka yang terjadi ITEM TERSEDIA
+        if (isAvailable) {
+            alert("Item tersedia!"); // Menampilkan alert jika item tersedia
+            console.log("Item tersedia!"); // Mencetak di console jika item tersedia
+        } else {
+            alert("Item tidak tersedia."); // Menampilkan alert jika item tidak tersedia
+            console.log("Item tidak tersedia."); // Mencetak di console jika item tidak tersedia
+        }
+        //KONDISI DIMANA KETIKA BOOLEAN YANG DIMASUKKAN ADALAH FALSE
+        //let isAvailable = false; // Karena disni tertulis true maka yang terjadi ITEM TERSEDIA
+        //if (isAvailable) {
+        //    alert("Item tersedia!"); // Menampilkan alert jika item tersedia
+        //    console.log("Item tersedia!"); // Mencetak di console jika item tersedia
+        //} else {
+        //    alert("Item tidak tersedia."); // Menampilkan alert jika item tidak tersedia
+        //    console.log("Item tidak tersedia."); // Mencetak di console jika item tidak tersedia
+        //}
+
+        // Tipe data Number
+        let nilaiUjian = 40; // karena disni nilai ujiannya adalah 40 maka hasilnya tidak lulus
+        let lulus = nilaiUjian >= 60; // Kondisi minimal nilai untuk lulus
+        if (lulus) {
+            alert("Selamat, kamu lulus!"); // Menampilkan alert jika lulus
+            console.log("Selamat, kamu lulus!"); // Mencetak di console jika lulus
+        } else {
+            alert("Maaf, kamu belum lulus."); // Menampilkan alert jika tidak lulus
+            console.log("Maaf, kamu belum lulus."); // Mencetak di console jika tidak lulus
+        }
+        // KONDISI DIMANA KETIKA NILAI UJIANNYA DIATAS 60
+        //let nilaiUjian = 90; // karena disni nilai ujiannya adalah 40 maka hasilnya tidak lulus
+        //let lulus = nilaiUjian >= 60; // Kondisi minimal nilai untuk lulus
+        //if (lulus) {
+        //    alert("Selamat, kamu lulus!"); // Menampilkan alert jika lulus
+        //    console.log("Selamat, kamu lulus!"); // Mencetak di console jika lulus
+        //} else {
+        //    alert("Maaf, kamu belum lulus."); // Menampilkan alert jika tidak lulus
+        //    console.log("Maaf, kamu belum lulus."); // Mencetak di console jika tidak lulus
+        //}
+
+
+        // Tipe data Array
+        let array = ["rumah", "mobil", "sepeda"]; // ini merupakan input dari array tersebut
+        if (array.includes("motor")) { //karena yang dimasukkan adalah motor dan motor itu tidak ada maka "MOTOR TIDAK DITEMUKAN DIDALAM DAFTAR"
+            alert("Motor ditemukan dalam daftar!"); // Menampilkan alert jika 'mobil' ada dalam array
+            console.log("Motor ditemukan dalam daftar!"); // Mencetak di console jika 'mobil' ada dalam array
+        } else {
+            alert("Motor tidak ditemukan dalam daftar."); // Menampilkan alert jika 'mobil' tidak ada dalam array
+            console.log("motor tidak ditemukan dalam daftar."); // Mencetak di console jika 'mobil' tidak ada dalam array
+        }
+        //KONDISI DIMANA KETIKA DITEMUKAN DALAM ARRAY DENGAN CARA MENAMBAHKANNYA
+        //let array = ["rumah", "mobil", "sepeda"]; // ini merupakan input dari array tersebut
+        //array[2]="motor";
+        //if (array.includes("motor")) { //karena yang dimasukkan adalah motor dan motor itu tidak ada maka "MOTOR TIDAK DITEMUKAN DIDALAM DAFTAR"
+        //    alert("Motor ditemukan dalam daftar!"); // Menampilkan alert jika 'mobil' ada dalam array
+        //    console.log("Motor ditemukan dalam daftar!"); // Mencetak di console jika 'mobil' ada dalam array
+        //} else {
+        //    alert("Motor tidak ditemukan dalam daftar."); // Menampilkan alert jika 'mobil' tidak ada dalam array
+        //    console.log("motor tidak ditemukan dalam daftar."); // Mencetak di console jika 'mobil' tidak ada dalam array
+        //}
+
+
+        // Tipe data BigInt
+        let bigNumber = BigInt(1000000); // Contoh BigInt
+        if (bigNumber > 1000000000000n) {
+            alert("BigInt melebihi batas besar!"); // Menampilkan alert jika BigInt melebihi batas
+            console.log("BigInt melebihi batas besar!"); // Mencetak di console jika BigInt melebihi batas
+        } else {
+            alert("BigInt dalam batas normal."); // Menampilkan alert jika BigInt dalam batas normal
+            console.log("BigInt dalam batas normal."); // Mencetak di console jika BigInt dalam batas normal
+        }
+        //KONDISI DIMANA KETIKA BIGINT MELEBIHI BATAS BESARNYA
+        // Tipe data BigInt
+        //let bigNumber = BigInt(1000000000000000000000000000000000000); // Contoh BigInt
+        //if (bigNumber > 1000000000000n) {
+        //    alert("BigInt melebihi batas besar!"); // Menampilkan alert jika BigInt melebihi batas
+        //    console.log("BigInt melebihi batas besar!"); // Mencetak di console jika BigInt melebihi batas
+        //} else {
+        //    alert("BigInt dalam batas normal."); // Menampilkan alert jika BigInt dalam batas normal
+        //    console.log("BigInt dalam batas normal."); // Mencetak di console jika BigInt dalam batas normal
+        //}
+
+        // Tipe data Undefined
+        let notDefined; // Contoh Undefined
+        if (typeof notDefined === "undefined") {
+            alert("Variabel tidak didefinisikan."); // Menampilkan alert jika variabel tidak didefinisikan
+            console.log("Variabel tidak didefinisikan."); // Mencetak di console jika variabel tidak didefinisikan
+        } else {
+            alert("Variabel memiliki nilai."); // Menampilkan alert jika variabel memiliki nilai
+            console.log("Variabel memiliki nilai."); // Mencetak di console jika variabel memiliki nilai
+        }
+        //KONDISI BILA MEMILIKI NILAI
+        //let notDefined = "Saya memiliki nilai"; // Memberikan nilai pada variabel
+        //if (typeof notDefined !== "undefined") { // Memeriksa apakah variabel tidak undefined
+        //    alert("Variabel memiliki nilai: " + notDefined); // Menampilkan alert jika variabel memiliki nilai
+        //    console.log("Variabel memiliki nilai: " + notDefined); // Mencetak di console jika variabel memiliki nilai
+        //    } else {
+        //        alert("Variabel tidak didefinisikan."); // Menampilkan alert jika variabel tidak didefinisikan
+        //        console.log("Variabel tidak didefinisikan."); // Mencetak di console jika variabel tidak didefinisikan
+        //    }
+
+
+        // Tipe data Null
+        let emptyValue = null; // Contoh Null
+        if (emptyValue === null) {
+            alert("Nilai adalah null."); // Menampilkan alert jika nilai adalah null
+            console.log("Nilai adalah null."); // Mencetak di console jika nilai adalah null
+        } else {
+            alert("Nilai bukan null."); // Menampilkan alert jika nilai bukan null
+            console.log("Nilai bukan null."); // Mencetak di console jika nilai bukan null
+        }
+
+        // Tipe data Object
+        let person = { name: "Budi", age: 30, hobby: "membaca" }; // Contoh Object
+        if (person.age >= 18) {
+            alert("Budi adalah orang dewasa."); // Menampilkan alert jika Budi adalah orang dewasa
+            console.log("Budi adalah orang dewasa."); // Mencetak di console jika Budi adalah orang dewasa
+        } else {
+            alert("Budi belum dewasa."); // Menampilkan alert jika Budi belum dewasa
+            console.log("Budi belum dewasa."); // Mencetak di console jika Budi belum dewasa
+        }
+
+        // Tipe data Symbol
+        let uniqueId = Symbol("id"); // Contoh Symbol
+        if (typeof uniqueId === "symbol") {
+            alert("Ini adalah tipe Symbol."); // Menampilkan alert jika tipe adalah Symbol
+            console.log("Ini adalah tipe Symbol."); // Mencetak di console jika tipe adalah Symbol
+        } else {
+            alert("Bukan tipe Symbol."); // Menampilkan alert jika bukan tipe Symbol
+            console.log("Bukan tipe Symbol."); // Mencetak di console jika bukan tipe Symbol
+        }
+    </script>
+</body>
+</html>
